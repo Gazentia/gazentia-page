@@ -1,0 +1,45 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap"); */
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../../fonts/Kanit-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../../fonts/Kanit-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../../fonts/Kanit-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  color: $white;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-bold {
+  font-weight: 700;
+}

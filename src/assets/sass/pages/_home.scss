@@ -1,0 +1,22 @@
+.bg {
+    background-color: $primary;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--header {
+        background-image: url("../../images/header.jpg");
+    }
+
+    &--about {
+        background-image: url("../../images/about.jpg");
+    }
+
+    &--tool {
+        background-image: url("../../images/tools.jpg");
+        background-position: right;
+    }
+    &--portfolio {
+        background-image: url("../../images/portfolio.jpg");
+    }
+}

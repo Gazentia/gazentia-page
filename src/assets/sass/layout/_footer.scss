@@ -1,0 +1,12 @@
+.footer {
+    background-image: linear-gradient(90deg, $primary 0%, $secondary 100%);
+    background-color: $primary;
+    font-size: $font-xs;
+    font-weight: 300;
+    text-align: center;
+    padding: 30px 10px;
+
+    @include breakpoint-up("md") {
+        font-size: $font-sm;
+    }
+}

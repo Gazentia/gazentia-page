@@ -1,0 +1,20 @@
+body::-webkit {
+    &-scrollbar {
+        width: 10px;
+    }
+    &-scrollbar-track {
+        //padding: 5px;
+        background-color: $primary;
+        transition: all 200ms ease-in-out;
+    }
+    &-scrollbar-thumb {
+        border-radius: 100px;
+       // border: 5px solid transparent;
+      //  background-clip: content-box;
+        background-color: rgba($white, 0.4);
+        transition: all 200ms ease-in-out;
+        &:hover {
+            background-color: rgba($white, 0.8); 
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// === Abstracts  ===//
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// === Vendors  ===//
+@import 'vendors/normalize';
+@import 'vendors/swiper-bundle';
+@import 'vendors/swiper-custom';
+@import 'vendors/tippy-shift-toward-subtle';
+@import 'vendors/tippy-custom';
+@import 'vendors/aos';
+
+// === Base  ===//
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utils';
+
+// === Layout  ===//
+@import 'layout/flex';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/scroll';
+
+// === Components  ===//
+@import 'components/section';
+@import 'components/article';
+@import 'components/separator';
+@import 'components/tech';
+@import 'components/carousel';
+@import 'components/badge';
+
+// === Pages  ===//
+@import 'pages/home';
+
+
+// === Themes  ===//

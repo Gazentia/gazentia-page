@@ -1,0 +1,16 @@
+/* .order-1 {
+    order: 0;
+
+    @include breakpoint-up("md") {
+        order: initial;
+    }
+}
+
+.order-2 {
+    order: 1;
+
+    @include breakpoint-up("md") {
+        order: initial;
+    }
+}
+ */

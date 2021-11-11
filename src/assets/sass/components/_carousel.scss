@@ -1,0 +1,87 @@
+.carousel {
+    &--main {
+        position: fixed;
+        right: 20px;
+        top: initial;
+        bottom: 100px;
+        z-index: 1;
+
+        @include breakpoint-down("xs") {
+            right: 15px;
+        }
+        @include breakpoint-up("md") {
+            top: 20px;
+            bottom: initial;
+        }
+    }
+
+    &__button {
+        &--prev {
+            cursor: pointer;
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-image: url("../../images/arrow-left.svg");
+            background-repeat: no-repeat;
+            opacity: 1;
+            transition: all 200ms ease-in-out;
+            &:hover {
+                opacity: 0.2;
+            }
+        }
+
+        &--next {
+            cursor: pointer;
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-image: url("../../images/arrow-right.svg");
+            background-repeat: no-repeat;
+            opacity: 1;
+            transition: all 200ms ease-in-out;
+            &:hover {
+                opacity: 0.2;
+            }
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        &--vertical {
+            flex-direction: column;
+
+            .carousel__dot {
+                margin-right: 0;
+                margin-bottom: 10px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__dot {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1.25px solid $grey;
+        background-color: transparent;
+        margin-right: 10px;
+        transition: all 200ms ease-in-out;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &:hover {
+            background-color: rgba($grey, 0.2);
+        }
+        &.active {
+            background-color: $white;
+            border-color: $white;
+        }
+    }
+}

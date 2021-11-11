@@ -1,0 +1,24 @@
+.badge {
+    display: inline-block;
+    color: $white;
+    font-size: $font-xs;
+    font-weight: 400;
+    margin: 0 8px;
+    padding: 2px 4px;
+    border-radius: 2px;
+
+    &--success {
+        background-color: $success;
+    }
+    &--pending {
+        background-color: $pending;
+        color: $primary;
+    }
+    &--accent {
+        background-color: $accent;
+        color: $primary;
+    }
+    &--danger {
+        background-color: $danger;
+    }
+}
