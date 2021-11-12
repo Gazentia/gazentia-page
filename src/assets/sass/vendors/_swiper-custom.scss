@@ -127,13 +127,13 @@
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 180%;
+        background-size: 200%;
         box-shadow: 0 0 5px rgba($white, 0.2);
         transition: box-shadow 500ms ease-in-out, background-size 300ms ease-in-out;
 
         &:hover {
             box-shadow: 0 0 8px rgba($white, 0.8);
-            background-size: 200%;
+            background-size: 220%;
             .swiper-custom--overlay {
                 opacity: 0.5;
             }

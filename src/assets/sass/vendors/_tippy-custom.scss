@@ -4,7 +4,7 @@
     font-size: $font-sm;
     font-weight: 300;
     border-radius: 2.5px;
-    padding: 8px;
+    padding: 3px;
 }
 
 .tippy-header {
@@ -50,15 +50,13 @@
 }
 .tippy-box[data-theme~="custom"] > .tippy-svg-arrow {
     fill: $primary;
-    transform: rotate(180deg);
 }
 
 .tippy-box[data-theme~="custom"] > .tippy-svg-arrow {
     & > svg {
-        transform: scale(1.5) rotate(180deg);
         /* The border */
         &:first-child {
-            fill: yellow;
+            fill: $primary;
         }
         /* The fill */
         &:last-child {

@@ -1,7 +1,7 @@
 import SmoothScroll from 'smooth-scroll';
 import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 import './lodash.custom.min.js';
-import tippy, { followCursor, roundArrow, hideAll } from 'tippy.js';
+import tippy from 'tippy.js';
 import AOS from 'aos';
 
 // tech status = 1: Used 2: Learning 3: Reviewing
@@ -211,13 +211,11 @@ function initTechTippy() {
         x.info +
         '</span>',
       theme: 'custom',
-      arrow: roundArrow,
+      arrow: true,
       animation: 'shift-toward-subtle',
-      followCursor: true,
       hideOnClick: false,
       allowHTML: true,
       interactiveDebounce: 75,
-      plugins: [followCursor],
     });
   });
 }
@@ -233,9 +231,9 @@ function initSectionTippy() {
       animation: 'shift-toward-subtle',
       hideOnClick: false,
       placement: 'left',
+      delay: [500, 500],
       allowHTML: true,
       interactiveDebounce: 75,
-      plugins: [followCursor],
     });
   });
 }
@@ -341,11 +339,11 @@ function sectionScroll() {
             switchCarouselsState.add('active');
             updateMenuActive(id);
             switchCarousels._tippy.show();
-            setTimeout(hideAll.bind(null, { duration: 500 }), 1000);
+            setTimeout(switchCarousels._tippy.hide, 1000);
           }
         } else {
           switchCarouselsState.remove('active');
-          hideAll({ duration: 500 });
+          switchCarousels._tippy.hide();
         }
       }
     });
@@ -355,7 +353,7 @@ function sectionScroll() {
     window.hasSmoothScroll = true;
     window.addEventListener(
       'scroll',
-      _.debounce(sectionScroll, 200, {
+      _.debounce(sectionScroll, 100, {
         maxWait: 1000,
       })
     );
@@ -384,6 +382,7 @@ function initSmoothScroll() {
 function init() {
   AOS.init({
     easing: 'ease-in-out',
+    mirror: false,
   });
   initSmoothScroll();
   menuMobile();

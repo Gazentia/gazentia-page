@@ -9,4 +9,4 @@
 
 <!-- ABOUT THE PROJECT -->
 
-<h2 align="center">👋 Hello, I'm Kai and this is my template <a href="https://gazentia.dev/">website </a>💻</h2>
+<h2 align="center">👋 Hello, I'm Kai and this is my template <a href="https://gazentia.dev">website </a>💻</h2>
