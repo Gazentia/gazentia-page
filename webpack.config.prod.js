@@ -85,7 +85,7 @@ module.exports = {
         },
       },
       {
-        test: /_redirects\.txt$/,
+        test: /_redirects$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',

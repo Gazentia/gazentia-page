@@ -28,7 +28,7 @@ module.exports.assetHanlder = function (url, resourcePath, context) {
 
 module.exports.importRedirectFile = function () {
   const dir = './src/';
-  const extFilter = new RegExp(/^_redirects\.txt$/);
+  const extFilter = new RegExp(/^_redirects$/);
   const fileLists = fs.readdirSync(path.resolve(__dirname, 'src'));
   const textFiles = fileLists.filter((filename) => extFilter.test(filename));
   const entryPointPath = path.resolve(
@@ -45,10 +45,10 @@ module.exports.importRedirectFile = function () {
       })
       .split('\n');
     const isFileExist = entryFile.findIndex((filePath) => {
-      return /_redirects\.txt/.test(filePath);
+      return /_redirects/.test(filePath);
     });
     if (isFileExist < 0) {
-      fs.appendFileSync(entryPointPath, '\nimport "../../_redirects.txt";');
+      fs.appendFileSync(entryPointPath, '\nimport "../../_redirects";');
     }
   }
 };
