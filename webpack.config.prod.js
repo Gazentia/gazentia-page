@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWpPluginLists = WebpackFn.htmlWpPlugin();
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+WebpackFn.importRedirectFile();
 
 module.exports = {
   mode: 'production',
@@ -77,6 +78,14 @@ module.exports = {
       },
       {
         test: /\.(woff(2)?|ttf|eot)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: WebpackFn.assetHanlder,
+        },
+      },
+      {
+        test: /_redirects\.txt$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
