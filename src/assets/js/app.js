@@ -84,44 +84,50 @@ const portfolios = [
   {
     id: Math.random * 101,
     title: 'Crowdfunding',
-    url: '/portfolios/crowdfunding-product-page-main',
+    url: 'https://p1.gazentia.dev/',
     img: 'https://i.ibb.co/nzZVd9W/desktop-design.jpg',
   },
   {
     id: Math.random * 101,
     title: 'Fem Easybank',
-    url: '/portfolios/fem-easybank',
+    url: 'https://p2.gazentia.dev/',
     img: 'https://i.ibb.co/MpMV4TK/desktop-design.jpg',
   },
   {
     id: Math.random * 101,
     title: 'Interactive Pricing',
-    url: '/portfolios/interactive-pricing-component',
+    url: 'https://p3.gazentia.dev/',
     img: 'https://i.ibb.co/jRD81q8/desktop-preview.jpg',
   },
   {
     id: Math.random * 101,
     title: 'Loopstudios Landing',
-    url: '/portfolios/loopstudios-landing-page',
+    url: 'https://p4.gazentia.dev/',
     img: 'https://i.ibb.co/BwwThs6/active-states.jpg',
   },
   {
     id: Math.random * 101,
     title: 'Stats Preview Card',
-    url: '/portfolios/stats-preview-card-component',
+    url: 'https://p5.gazentia.dev/',
     img: 'https://i.ibb.co/g99DSkF/desktop-preview.jpg',
   },
   {
     id: Math.random * 101,
     title: 'Sunnyside Agency Landing',
-    url: '/portfolios/sunnyside-agency-landing-page',
+    url: 'https://p6.gazentia.dev/',
     img: 'https://i.ibb.co/kmWL135/active-states.jpg',
   },
   {
     id: Math.random * 101,
     title: 'Tip Calculator',
-    url: '/portfolios/tip-calculator-app-main',
+    url: 'https://p7.gazentia.dev/',
     img: 'https://i.ibb.co/N1H3RqH/desktop-design-completed.jpg',
+  },
+  {
+    id: Math.random * 101,
+    title: 'NFT Preview Card',
+    url: 'https://p8.gazentia.dev/',
+    img: 'https://i.ibb.co/ggHRq9y/nft-card.jpg',
   },
 ];
 
