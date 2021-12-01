@@ -47,8 +47,8 @@ module.exports.importRedirectFile = function () {
     const isFileExist = entryFile.findIndex((filePath) => {
       return /_redirects/.test(filePath);
     });
-    if (isFileExist < 0) {
-      fs.appendFileSync(entryPointPath, '\nimport "../../_redirects";');
+    if (isFileExist >= 0) {
+      fs.appendFileSync(entryPointPath, '\nimport "../../_redirects.txt";');
     }
   }
 };
