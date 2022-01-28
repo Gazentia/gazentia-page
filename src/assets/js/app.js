@@ -95,6 +95,12 @@ const techs = [
 const portfolios = [
   {
     id: Math.random * 101,
+    title: "Covstats (Vue.js)",
+    url: "https://covstats.pages.dev/",
+    img: "https://i.ibb.co/p1h2Z6v/covstats-screen.jpg",
+  },
+  {
+    id: Math.random * 101,
     title: "Crowdfunding",
     url: "https://p1.gazentia.dev/",
     img: "https://i.ibb.co/nzZVd9W/desktop-design.jpg",
